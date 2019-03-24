@@ -1,0 +1,466 @@
+	@font-face {
+  		font-family: 'Font Awesome 5 Free';
+  		font-style: normal;
+  		font-weight: 900;
+  		src: url("d:/Users/asd/webfonts/fa-solid-900.eot");
+  		src: url("d:/Users/asd/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("d:/Users/asd/webfonts/fa-solid-900.woff2") format("woff2"), url("d:/Users/asd/webfonts/fa-solid-900.woff") format("woff"), url("d:/Users/asd/webfonts/fa-solid-900.ttf") format("truetype"), url("d:/Users/asd/webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
+	@font-face {
+  		font-family: myFirstFont;
+  		src: url(d:/Users/asd/Jaapokki-font-package-1.0/Regular/Jaapokki-Regular.otf);
+	}
+	@font-face {
+		font-family: mySecondFont;
+  		src: url(d:/Users/asd/Jaapokki-font-package-1.0/MavenPro-Regular.ttf);
+	}
+	@media screen and (min-width:900px) {
+	body {
+		width:100%;
+		margin:0;
+			.header {
+			height:250px;
+			display:flex;
+			flex-flow:row nowrap;
+			align-items:center;
+			justify-content:center;
+				.header__title {
+				width:80%;
+				height:200px;
+				display:flex;
+				flex-flow:column wrap;
+				align-items:center;
+				justify-content:space-around;
+					.title-main {
+					font-size:60px;
+					font-family:myFirstFont;
+					}
+					.title {
+					font-size:14px;
+					font-weight:bold;
+					font-family: 'Maven Pro';
+					color:#888;
+					}
+				}
+			}
+			.content {
+				padding-left:5px;
+				padding-right:5px;
+				.content__posts {
+				display:grid;
+				height:400px;
+				grid-template-columns:1fr 1fr 1fr;
+					.post {
+					display:grid;
+					grid-template-rows:1fr 0.8fr;
+					justify-items:center;
+					position:relative;
+					.postel {
+						display:flex;
+						flex-flow:column nowrap;
+						align-items: center;
+						justify-content:space-around;
+					.sizepostimage {
+						margin-top:70px;
+						border:3px solid #000;
+						box-sizing:border-box;
+						width:290px;
+						height:200px;
+						margin-bottom:20px;
+						z-index:2;
+					}
+					.sizepostimages {
+						border:3px solid #E76A56;
+					}
+					.postelstyle {
+						position:absolute;
+						top:0;
+						color:#ffffff;
+						border:2px solid #ffffff;
+						padding:13px;
+						z-index:1;
+						color:#ffffff;
+						text-decoration:none;
+						font-family:myFirstFont;
+						font-size:14px;
+							.longright {
+					  		font-family: 'Font Awesome 5 Free';
+					  		color:#ffffff;
+					  		width:6px;
+					  		height:0.8px;
+					  		position:relative;
+					  		left:0;
+							margin-left: 5px;
+						}
+					}
+					.postelstyle:hover {
+						.longright {
+							transition:left .8s linear;
+							left:5px;
+						}
+					}
+				}
+					.postel:hover {
+						.sizepostimage{
+						filter:brightness(0.3);
+						}
+						.postelstyle {
+							transition:top 1s ease-in;
+							top:138px;
+						}
+						}
+				}
+					.post-title {
+						font-size:14px;
+				    	font-family: myFirstFont;		
+					}
+			}
+				.cblocks {
+					display:flex;
+					height:400px;
+					flex-flow:row nowrap;
+					align-items:center;
+					justify-content:center;
+					background-color:#f1f2f1;
+				.content__blocks {
+					height:250px;
+					display:grid;
+					grid-template-rows:1fr 1fr;
+					grid-template-columns:1fr 1fr 1fr;
+					place-items:center center;
+					.block {
+							height:110px;
+							display:grid;
+							grid-template-columns:0.5fr 1fr;
+							grid-template-rows:0.8fr 0.4fr;
+							grid-gap:10px;
+							justify-items:center;
+							align-items:center;
+							.sizeimageblock {
+								width:60px;
+								height:60px;
+								grid-row-start:1;
+								grid-row-end:3;
+							}
+							.sizeimageblocks {
+								width:60px;
+								height:50px;
+								grid-row-start:1;
+								grid-row-end:3;
+							}
+							.block-maintitle {
+								font-family:myFirstFont;
+								font-size:15px;
+								align-self:flex-end;
+							}
+							.block-title {
+								font-family:'Maven Pro';
+								color:#727272;
+								letter-spacing:1.3px;
+								text-align: center;
+								align-self:flex-start;
+							}
+						}
+					}
+				}
+			}
+			.footer {
+				font-family:myFirstFont;
+				display:flex;
+				flex-flow:row nowrap;
+				justify-content:center;
+				align-items:center;
+				height:200px;
+			}
+
+	}
+}
+@media screen and (min-width:320px) and (max-width:900px) {
+	body {
+		width:100%;
+		margin:0;
+			.header {
+			height:250px;
+			display:flex;
+			flex-flow:row nowrap;
+			align-items:center;
+			justify-content:center;
+				.header__title {
+				width:80%;
+				height:200px;
+				display:flex;
+				flex-flow:column wrap;
+				align-items:center;
+				justify-content:space-around;
+					.title-main {
+					font-size:60px;
+					font-family:myFirstFont;
+					}
+					.title {
+					font-size:14px;
+					font-weight:bold;
+					font-family:'Maven Pro';
+					color:#888;
+					}
+				}
+			}
+			.content {
+				padding-left:5px;
+				padding-right:5px;
+				.content__posts {
+				height:600px;
+				display:grid;
+				grid-template-rows:1fr 1fr;
+				grid-template-columns:1fr 1fr;
+					.post {
+					height:300px;
+					position:relative;
+					display:flex;
+					flex-flow:column wrap;
+					align-items:center;
+					justify-content:space-around;
+					.postel {
+						display:flex;
+						flex-flow:column nowrap;
+						align-items: center;
+						justify-content:space-around;
+						.sizepostimage {
+							margin-top:60px;
+							max-width:100%;
+							border:3px solid #000;
+							box-sizing:border-box;
+						}
+						.sizepostimages {
+						border:3px solid #E76A56;
+						}
+						.postelstyle {
+						position:absolute;
+						top:0;
+						color:#ffffff;
+						border:2px solid #ffffff;
+						padding:13px;
+						z-index:1;
+						color:#ffffff;
+						text-decoration:none;
+						font-family:myFirstFont;
+						font-size:14px;
+						.longright {
+					  		font-family: 'Font Awesome 5 Free';
+					  		color:#ffffff;
+					  		width:6px;
+					  		height:0.8px;
+					  		position:relative;
+					  		left:0;
+							margin-left: 5px;
+						}
+						}
+						.postelstyle:hover {
+							.longright {
+								transition:left .8s linear;
+								left:5px;
+							}
+						}
+					}
+					.postel:hover {
+						.sizepostimage{
+						filter:brightness(0.3);
+						}
+						.postelstyle {
+							transition:top 1s ease-in;
+							top:125px;
+						}
+					}
+					
+					.post-title {
+						font-size:14px;
+						font-family:myFirstFont;
+					}
+					}
+				}
+				.content__blocks {
+					height:540px;
+					background-color:#f1f2f1;
+					display:grid;
+					grid-template-rows:1fr 1fr 1fr;
+					grid-template-columns:1fr 1fr;
+					.block {
+						height:180px;
+						display:flex;
+						flex-flow:column wrap;
+						align-items:center;
+						justify-content:space-around;
+						.sizeimageblock {
+							width:40px;
+							height:40px;
+						}
+						.sizeimageblocks {
+							width:40px;
+							height:30px;
+						}
+						.block-maintitle {
+							font-size:12px;
+							font-family:myFirstFont;
+						}
+						.block-title {
+							font-family:'Maven Pro';
+							color:#727272;
+							text-align: center;
+						}
+					}
+				}
+			}
+			.footer {
+				font-family:myFirstFont;
+				display:flex;
+				flex-flow:row nowrap;
+				justify-content:center;
+				align-items:center;
+				height:200px;
+			}
+
+		}
+}
+@media only screen and (max-width:320px) {
+	body {
+		width:100%;
+		margin:0;
+			.header {
+			height:250px;
+			display:flex;
+			flex-flow:row nowrap;
+			align-items:center;
+			justify-content:center;
+				.header__title {
+				width:80%;
+				height:200px;
+				display:flex;
+				flex-flow:column wrap;
+				align-items:center;
+				justify-content:space-around;
+					.title-main {
+					font-size:40px;
+					font-family:myFirstFont;
+					}
+					.title {
+					font-size:14px;
+					font-weight:bold;
+					font-family:'Maven Pro';
+					color:#888;
+					}
+				}
+			}
+			.content {
+				padding-left:5px;
+				padding-right:5px;
+				.content__posts {
+				height:900px;
+				display:grid;
+				grid-template-rows:1fr 1fr 1fr;
+				grid-template-columns:1fr;
+					.post {
+					height:300px;
+					display:flex;
+					position:relative;
+					flex-flow:column wrap;
+					align-items:center;
+					justify-content:space-around;
+					position:relative;
+					.postel {
+						display:flex;
+						flex-flow:column nowrap;
+						align-items: center;
+						justify-content:space-around;
+					.sizepostimage {
+						margin-top:70px;
+						max-width:100%;
+						border:3px solid #000;
+						box-sizing:border-box;
+					}
+					.postelstyle {
+						position:absolute;
+						top:0;
+						color:#ffffff;
+						border:2px solid #ffffff;
+						padding:13px;
+						z-index:1;
+						color:#ffffff;
+						text-decoration:none;
+						font-family:myFirstFont;
+						font-size:14px;
+						.longright {
+					  		font-family: 'Font Awesome 5 Free';
+					  		color:#ffffff;
+					  		width:6px;
+					  		height:0.8px;
+					  		position:relative;
+					  		left:0;
+							margin-left: 5px;
+						}
+						}
+						.postelstyle:hover {
+							.longright {
+								transition:left .8s linear;
+								left:5px;
+							}
+						}
+					}
+					.postel:hover {
+						.sizepostimage{
+						filter:brightness(0.3);
+						}
+						.postelstyle {
+							transition:top 1s ease-in;
+							top:115px;
+						}
+					}
+					.sizepostimages {
+						border:3px solid #E76A56;
+					}
+					.post-title {
+						font-size:14px;
+						font-family:myFirstFont;
+					}
+					}
+				}
+				.content__blocks {
+					height:1080px;
+					background-color:#f1f2f1;
+					display:grid;
+					grid-template-columns:1fr;
+					grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
+					.block {
+						height:180px;
+						display:flex;
+						flex-flow:column wrap;
+						align-items:center;
+						justify-content:space-around;
+						.sizeimageblock {
+							width:30px;
+							height:30px;
+						}
+						.sizeimageblocks {
+							width:40px;
+							height:30px;
+						}
+						.block-maintitle {
+							font-size:12px;
+							font-family:myFirstFont;
+						}
+						.block-title {
+							font-family:'Maven Pro';
+							color:#727272;
+							text-align: center;
+						}
+					}
+				}
+			}
+			.footer {
+				font-family:myFirstFont;
+				font-weight:bold;
+				display:flex;
+				flex-flow:row nowrap;
+				justify-content:center;
+				align-items:center;
+				height:200px;
+			}
+
+		}
+}

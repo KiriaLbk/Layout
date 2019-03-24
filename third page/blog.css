@@ -1,0 +1,525 @@
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  src: url("d:/Users/asd/webfonts/fa-solid-900.eot");
+  src: url("d:/Users/asd/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("d:/Users/asd/webfonts/fa-solid-900.woff2") format("woff2"), url("d:/Users/asd/webfonts/fa-solid-900.woff") format("woff"), url("d:/Users/asd/webfonts/fa-solid-900.ttf") format("truetype"), url("d:/Users/asd/webfonts/fa-solid-900.svg#fontawesome") format("svg");
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url(d:/Users/asd/Jaapokki-font-package-1.0/Regular/Jaapokki-Regular.otf);
+}
+@font-face {
+  font-family: mySecondFont;
+  src: url(d:/Users/asd/Jaapokki-font-package-1.0/MavenPro-Regular.ttf);
+}
+@media only screen and (min-width: 900px) {
+  body {
+    margin: 0;
+    width: 100%;
+  }
+  body .header {
+    width: 100%;
+    height: 200px;
+    background-color: #fcfcfc;
+    margin: 0;
+  }
+  body .header .header-block {
+    height: 70px;
+    background-image: url(image/logo.png);
+    background-position: 3% 50%;
+    background-repeat: no-repeat;
+    background-size: 70px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  body .header .header-block .header-blockmenu {
+    height: 50px;
+    width: 500px;
+  }
+  body .header .header-block .header-blockmenu ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+  }
+  body .header .header-block .header-blockmenu ul a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: myFirstFont;
+    padding: 2px;
+    border: 1px solid #ffffff;
+  }
+  body .header .header-block .header-blockmenu ul a:hover {
+    color: #E46753;
+    border: 1px solid #E46753;
+  }
+  body .header .header-main {
+    height: 130px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  body .header .header-main h2 {
+    font-family: myFirstFont;
+    font-size: 40px;
+  }
+  body .content {
+    height: 1300px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  body .content .post {
+    height: 400px;
+    width: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  body .content .post .hrefstylemain {
+    letter-spacing: 1.3px;
+    font-size: 13px;
+    font-family: myFirstFont;
+    text-decoration: none;
+    color: #000000;
+  }
+  body .content .post .hrefstylemain:hover {
+    color: #E66A55;
+  }
+  body .content .post .sizepostimage {
+    max-width: 100%;
+  }
+  body .content .post .posttitle {
+    font-family: mySecondFont;
+    font-size: 12px;
+    color: #888a8c;
+  }
+  body .content .post .badge {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  body .content .post .badge .hrefstylebadge {
+    font-size: 12px;
+    font-family: myFirstFont;
+    color: #E66A55;
+    text-decoration: none;
+  }
+  body .content .post .badge .hrefstylebadge .longright {
+    font-family: "Font Awesome 5 Free";
+    color: #e66a55;
+    width: 8px;
+    height: 0.8px;
+    position: relative;
+    left: 0;
+    margin-left: 5px;
+  }
+  body .content .post .badge:hover .hrefstylebadge {
+    color: #000000;
+  }
+  body .content .post .badge:hover .hrefstylebadge .longright {
+    transition: right 6s ease;
+    left: 8px;
+    color: #000000;
+  }
+  body .footer {
+    height: 340px;
+  }
+  body .footer .footer-content {
+    height: 280px;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #35373E;
+    justify-content: center;
+    align-items: center;
+  }
+  body .footer .footer-content .footersizeimage {
+    width: 100px;
+    height: 41px;
+    padding-bottom: 15px;
+  }
+  body .footer .footer-content .footercontent {
+    color: #BCBEC8;
+    font-size: 13px;
+    font-family: mySecondFont;
+    text-align: center;
+  }
+  body .footer .footer-main {
+    height: 60px;
+    background-color: #2F3138;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  body .footer .footer-main .footerlistcontainer {
+    width: 500px;
+    height: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  body .footer .footer-main .footerlistcontainer ul {
+    width: 400px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  body .footer .footer-main .footerlistcontainer ul a {
+    font-family: myFirstFont;
+    font-size: 13px;
+    text-decoration: none;
+    color: #CFD1DB;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 900px) {
+  body {
+    width: 100%;
+    margin: 0;
+  }
+  body .header {
+    height: 200px;
+    background-color: #fcfcfc;
+  }
+  body .header .header-block {
+    height: 70px;
+    background-image: url(image/logo.png);
+    background-position: 3% 50%;
+    background-repeat: no-repeat;
+    background-size: 70px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  body .header .header-block .header-blockmenu {
+    height: 50px;
+    width: 75%;
+  }
+  body .header .header-block .header-blockmenu ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+  }
+  body .header .header-block .header-blockmenu ul a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: myFirstFont;
+    padding: 2px;
+    border: 1px solid #ffffff;
+  }
+  body .header .header-block .header-blockmenu ul a:hover {
+    color: #E46753;
+    border: 1px solid #E46753;
+  }
+  body .header .header-main {
+    height: 130px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  body .header .header-main h2 {
+    font-family: myFirstFont;
+    font-size: 40px;
+  }
+  body .content {
+    height: 2000px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    display: grid;
+  }
+  body .content .post {
+    height: 400px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+  }
+  body .content .post .hrefstylemain {
+    font-size: 13px;
+    font-family: myFirstFont;
+    text-decoration: none;
+    color: #000000;
+  }
+  body .content .post .hrefstylemain:hover {
+    color: #E66A55;
+  }
+  body .content .post .sizepostimage {
+    max-width: 90%;
+  }
+  body .content .post .posttitle {
+    font-family: mySecondFont;
+    font-size: 12px;
+    color: #888a8c;
+  }
+  body .content .post .badge {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  body .content .post .badge .hrefstylebadge {
+    font-size: 12px;
+    font-family: myFirstFont;
+    color: #E66A55;
+    text-decoration: none;
+  }
+  body .content .post .badge .hrefstylebadge .longright {
+    font-family: "Font Awesome 5 Free";
+    color: #e66a55;
+    width: 8px;
+    height: 0.8px;
+    position: relative;
+    left: 0;
+    margin-left: 5px;
+  }
+  body .content .post .badge:hover .hrefstylebadge {
+    color: #000000;
+  }
+  body .content .post .badge:hover .hrefstylebadge .longright {
+    transition: right 6s ease;
+    left: 8px;
+    color: #000000;
+  }
+  body .footer {
+    height: 340px;
+  }
+  body .footer .footer-content {
+    height: 280px;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #35373E;
+    justify-content: center;
+    align-items: center;
+  }
+  body .footer .footer-content .footersizeimage {
+    width: 100px;
+    height: 41px;
+    padding-bottom: 10px;
+  }
+  body .footer .footer-content .footercontent {
+    color: #BCBEC8;
+    font-size: 13px;
+    font-family: mySecondFont;
+    text-align: center;
+  }
+  body .footer .footer-main {
+    height: 60px;
+    background-color: #2F3138;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  body .footer .footer-main .footerlistcontainer {
+    width: 60%;
+    height: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  body .footer .footer-main .footerlistcontainer ul {
+    width: 400px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  body .footer .footer-main .footerlistcontainer ul a {
+    font-family: myFirstFont;
+    font-size: 13px;
+    text-decoration: none;
+    color: #CFD1DB;
+  }
+}
+@media only screen and (max-width: 320px) {
+  body {
+    width: 100%;
+    margin: 0;
+  }
+  body .header {
+    height: 230px;
+    width: 100%;
+    background-color: #fcfcfc;
+  }
+  body .header .header-block {
+    height: 100px;
+    background-image: url(image/logo.png);
+    background-position: 3% 50%;
+    background-repeat: no-repeat;
+    background-size: 70px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  body .header .header-block .header-blockmenu {
+    height: 90px;
+  }
+  body .header .header-block .header-blockmenu ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+  }
+  body .header .header-block .header-blockmenu ul a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: myFirstFont;
+    padding: 2px;
+    border: 1px solid #ffffff;
+  }
+  body .header .header-block .header-blockmenu ul a:hover {
+    color: #E46753;
+    border: 1px solid #E46753;
+  }
+  body .header .header-main {
+    height: 130px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  body .header .header-main h2 {
+    font-family: myFirstFont;
+    font-size: 40px;
+  }
+  body .content {
+    height: 3600px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  body .content .post {
+    height: 400px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+  }
+  body .content .post .hrefstylemain {
+    font-size: 13px;
+    font-family: myFirstFont;
+    text-decoration: none;
+    color: #000000;
+  }
+  body .content .post .hrefstylemain:hover {
+    color: #E66A55;
+  }
+  body .content .post .sizepostimage {
+    max-width: 100%;
+  }
+  body .content .post .posttitle {
+    font-family: mySecondFont;
+    font-size: 12px;
+    color: #888a8c;
+  }
+  body .content .post .badge {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  body .content .post .badge .hrefstylebadge {
+    font-size: 12px;
+    font-family: myFirstFont;
+    color: #E66A55;
+    text-decoration: none;
+  }
+  body .content .post .badge .hrefstylebadge .longright {
+    font-family: "Font Awesome 5 Free";
+    color: #e66a55;
+    width: 8px;
+    height: 0.8px;
+    position: relative;
+    left: 0;
+    margin-left: 5px;
+  }
+  body .content .post .badge:hover .hrefstylebadge {
+    color: #000000;
+  }
+  body .content .post .badge:hover .hrefstylebadge .longright {
+    transition: right 6s ease;
+    left: 8px;
+    color: #000000;
+  }
+  body .footer {
+    height: 380px;
+  }
+  body .footer .footer-content {
+    height: 280px;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #35373E;
+    justify-content: center;
+    align-items: center;
+  }
+  body .footer .footer-content .footersizeimage {
+    width: 100px;
+    height: 41px;
+    padding-bottom: 10px;
+  }
+  body .footer .footer-content .footercontent {
+    color: #BCBEC8;
+    font-size: 13px;
+    font-family: mySecondFont;
+    text-align: center;
+  }
+  body .footer .footer-main {
+    height: 100px;
+    background-color: #2F3138;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  body .footer .footer-main .footerlistcontainer {
+    width: 50%;
+    height: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  body .footer .footer-main .footerlistcontainer ul {
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  body .footer .footer-main .footerlistcontainer ul a {
+    padding-top: 3px;
+    font-family: myFirstFont;
+    font-size: 13px;
+    text-decoration: none;
+    color: #CFD1DB;
+  }
+}
+
+/*# sourceMappingURL=blog.css.map */
