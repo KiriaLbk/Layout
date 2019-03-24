@@ -40,7 +40,7 @@
   body .header .header__title .title {
     font-size: 14px;
     font-weight: bold;
-    font-family: "Maven Pro";
+    font-family: mySecondFont;
     color: #888;
   }
   body .content {
@@ -154,7 +154,7 @@
     align-self: flex-end;
   }
   body .content .cblocks .content__blocks .block .block-title {
-    font-family: "Maven Pro";
+    font-family: mySecondFont;
     color: #727272;
     letter-spacing: 1.3px;
     text-align: center;
@@ -196,7 +196,7 @@
   body .header .header__title .title {
     font-size: 14px;
     font-weight: bold;
-    font-family: "Maven Pro";
+    font-family: mySecondFont;
     color: #888;
   }
   body .content {
@@ -295,7 +295,7 @@
     font-family: myFirstFont;
   }
   body .content .content__blocks .block .block-title {
-    font-family: "Maven Pro";
+    font-family: mySecondFont;
     color: #727272;
     text-align: center;
   }
@@ -335,7 +335,7 @@
   body .header .header__title .title {
     font-size: 14px;
     font-weight: bold;
-    font-family: "Maven Pro";
+    font-family: mySecondFont;
     color: #888;
   }
   body .content {
@@ -435,7 +435,7 @@
     font-family: myFirstFont;
   }
   body .content .content__blocks .block .block-title {
-    font-family: "Maven Pro";
+    font-family: mySecondFont;
     color: #727272;
     text-align: center;
   }
